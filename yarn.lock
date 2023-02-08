@@ -7313,6 +7313,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-safe-area-context@npm:4.4.1":
+  version: 4.4.1
+  resolution: "react-native-safe-area-context@npm:4.4.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: ef7c41ea59a34b114c6481fb130e66ef85e8d5b88acb46279131367761ca9fbf22cd310fe613f49b6c9b56dbd83e044be640f0532eda1d3856bf708e96335a35
+  languageName: node
+  linkType: hard
+
 "react-native@npm:0.70.5":
   version: 0.70.5
   resolution: "react-native@npm:0.70.5"
@@ -7740,6 +7750,7 @@ __metadata:
     expo-status-bar: ~1.4.2
     react: 18.1.0
     react-native: 0.70.5
+    react-native-safe-area-context: 4.4.1
   languageName: unknown
   linkType: soft
 

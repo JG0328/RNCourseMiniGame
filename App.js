@@ -4,6 +4,7 @@ import {StyleSheet, ImageBackground, StatusBar} from 'react-native';
 import StartGameScreen from './screens/StartGameScreen';
 import {useState} from "react";
 import GameScreen from "./screens/GameScreen";
+import {SafeAreaProvider, SafeAreaView} from "react-native-safe-area-context";
 
 export default function App() {
     const [userNumber, setUserNumber] = useState();
@@ -26,7 +27,11 @@ export default function App() {
                 style={styles.rootScreen}
                 imageStyle={styles.backgroundImage}
             >
-                {screen}
+                <SafeAreaProvider>
+                    <SafeAreaView style={styles.rootScreen}>
+                        {screen}
+                    </SafeAreaView>
+                </SafeAreaProvider>
             </ImageBackground>
         </LinearGradient>
     );
